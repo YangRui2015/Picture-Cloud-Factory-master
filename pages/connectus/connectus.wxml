@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+
+<view class="info">
+<text class="note">{{info}}</text>
+</view>
+
+ <form bindsubmit="send">
+   <textarea class="inbox" placeholder='请留下您的评价或意见'  name="text"></textarea>
+   <button class="load_button" type="primary" bindtap="send" form-type="submit">{{msg}}</button>
+</form>
+
+<text class="notice">{{notice}}</text>
+
+</view>

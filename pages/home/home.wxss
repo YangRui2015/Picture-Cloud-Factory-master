@@ -1,0 +1,117 @@
+/**index.wxss**/
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center
+}
+
+.swiper{
+  top: 0rpx;
+  height: 40%;
+  width: 100%;
+  position: fixed
+}
+
+.swiper image{
+  height: 85%;
+  width: 85%;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  top: 45%;
+  width:100%;
+  background-color: blueviolet;
+  position: fixed
+}
+
+.row0{
+  display: flex;
+  flex-direction: row;
+  top:45%;
+  width: 100%;
+  height: 14%;
+  background-color: gainsboro;
+  position: fixed
+}
+
+.row1{
+  display: flex;
+  flex-direction: row;
+  top:59.5%;
+  width: 100%;
+  height: 14%;
+  background-color: gainsboro;
+  position: fixed
+}
+
+.row2{
+  display: flex;
+  flex-direction: row;
+  top:74%;
+  width: 100%;
+  height: 15%;
+  background-color: gainsboro;
+  position: fixed
+}
+
+
+
+.show_image0 {
+  width:15%;
+  height:15%; 
+  right: 1%;
+  position:fixed;
+  display: inline-block
+}
+
+.show_image1 {
+  width:15%;
+  height:15%; 
+  right: 1%;
+  position:fixed;
+  display: inline-block
+}
+
+.show_image2 {
+  width:15%;
+  height:15%; 
+  right: 1%;
+  position:fixed;
+  display: inline-block
+}
+
+
+.note {
+  font-size: 23rpx;
+  left: 55rpx;
+  bottom: 20rpx;
+  position: fixed;
+}
+
+ .note1{
+   font-size: 30rpx;
+   left: 50rpx;
+   margin-top: 55rpx;
+   position: fixed; 
+   color: black
+ }
+
+ .note2{
+   font-size: 30rpx;
+   margin-top: 50rpx;
+   left: 50rpx;
+   position: fixed;
+   color: black
+ }
+
+  .note3{
+   font-size: 30rpx;
+   margin-top: 50rpx;
+   left: 50rpx;
+   position: fixed;
+   color: black
+ }

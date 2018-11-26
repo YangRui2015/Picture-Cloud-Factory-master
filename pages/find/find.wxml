@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+
+<form bindsubmit='search' class="box">
+
+<input class="inbox" placeholder='请输入您的号码' name='id'></input>
+<button class="load_button" form-type='submit' type="primary" size="mini">{{msg}} 
+</button>
+
+</form>
+
+<image class="show_image" mode="aspectFit" src="{{ico}}" bindtap="upload"></image>
+
+<view class="scroll_box">
+
+<scroll-view scroll-x="true" class="ImageList">
+<view class="imglist" wx:for="{{img_list}}" wx:key="index">
+		<image class="imginlist" mode="aspectFit" src="{{img_list[index]}}"  bindtouchstart='timestart' bindtouchend='timeend' bindtap='saveImg'>
+    </image>
+</view>
+</scroll-view>
+
+</view>
+
+<text class="note">输入号码点击查询或者点击人脸方框查询哦！</text>
+
+
+
+</view>

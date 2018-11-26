@@ -1,0 +1,30 @@
+/**index.wxss**/
+
+.container{
+  display: flex;
+  align-items: center;
+  text-align: center
+}
+
+.show_image {
+  align-items: center;
+  width:60%;
+  height:60%; 
+  top:40rpx;
+  position: fixed
+}
+
+.load_button {
+  top: 65%;
+  width: 45%;
+  height: 7%;
+  border-radius: 20rpx;
+  position: fixed;
+  font-size: 30rpx;
+}
+
+.note {
+  font-size: 24rpx;
+  top: 90%;
+  position: fixed
+}

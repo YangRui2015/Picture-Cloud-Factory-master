@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+
+<image class="show_image" src="{{show_image}}" mode="aspectFit" 
+bindtouchstart='timestart' bindtouchend='timeend' bindtap='saveImg'>
+</image>
+
+<button class="load_button" type="primary" size="mini" bindtap="upload">{{msg}} 
+</button>
+
+<view class="scroll_box">
+
+<scroll-view scroll-x="true" class="ImageList">
+<view class="imglist" wx:for="{{img_list}}" wx:key="index">
+		<image class="imginlist" src="{{img_list[index]}}" bindtap='select'>
+    </image>
+</view>
+</scroll-view>
+
+<view>
+<text class="note">1.先上传图片然后点击喜欢的风格即可；\n
+2.长按生成的图片3秒松开即可保存到本地。</text>
+</view>
+
+</view>
+
+</view>

@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/find/find",
+    "pages/index/index",
+    "pages/style/style",
+    "pages/connectus/connectus",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "图像云工厂",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "功能",
+        "pagePath": "pages/home/home",
+        "iconPath": "pages/image/function.png",
+        "selectedIconPath": "pages/image/function_on.png"
+      },
+      {
+        "text": "联系我们",
+        "pagePath": "pages/connectus/connectus",
+        "iconPath": "pages/image/connect.png",
+        "selectedIconPath": "pages/image/connect_on.png"
+      }
+    ]
+  },
+
+"networkTimeout": {
+  "request": 15000,
+  "connectSocket": 15000,
+  "uploadFile": 15000,
+  "downloadFile": 15000
+}
+}

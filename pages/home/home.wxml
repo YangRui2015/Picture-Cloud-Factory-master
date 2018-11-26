@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="3500" duration="3000" circular='true'>  
+      <block wx:for="{{imglist}}" wx:key="index">  
+        <swiper-item>  
+          <image src="{{imglist[index]}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+</swiper>  
+
+
+<view class="row">
+
+<view class="row0" bindtap='gotoear'>
+<text class="note1">可爱贴纸</text>
+<image class="show_image0" src="{{earpath}}" mode="aspectFit"  ></image>
+</view>
+
+<view class="row1" bindtap='gotofind'>
+<image class="show_image1" src="{{findpath}}" mode="aspectFit"  ></image>
+<text class="note2">图片搜索</text>
+</view>
+
+<view class="row2" bindtap="gotostyle">
+<image class="show_image2" src="{{stylepath}}" mode="aspectFit"  ></image>
+<text class="note3">风格迁移</text>
+</view>
+<!-- 
+<text class="note">1. 点击图片预览，长按图片三秒松开自动保存（默认图除外）;\n
+2. 对小程序有什么想法或者建议可以告诉我哦。
+</text> -->
+
+</view>
+
+</view>

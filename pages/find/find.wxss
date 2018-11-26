@@ -1,0 +1,78 @@
+/**index.wxss**/
+
+.container{
+  display: flex;
+  align-items: center;
+  text-align: center
+}
+
+.box{
+  align-items: center;
+  text-align: center
+}
+
+.inbox{
+  top: 18%;
+  left: 125rpx;
+  position: fixed;
+  border: 2rpx solid steelblue;
+  border-radius: 20rpx;
+  width:500rpx;
+  height: 70rpx;
+}
+
+
+.load_button {
+  top: 26%;
+  left: 170rpx;
+  width: 420rpx;
+  height: 65rpx;
+  border-radius: 20rpx;
+  position: fixed;
+}
+
+.show_image {
+  align-items: center;
+  width:180rpx;
+  height:180rpx; 
+  top:35%;
+  margin-bottom:20rpx;
+  position: fixed;
+   border: 2rpx solid
+ }  
+
+.scroll_box{
+width: 100%;
+height: 25%;
+overflow: hidden;
+padding: 20rpx;
+white-space: nowrap;
+top: 55%;
+position: fixed
+}
+
+.ImageList{
+  display: inline-block; 
+  flex-direction: row;
+  width: 100%;
+  height: auto
+}
+
+.imglist{
+  display: inline-block;
+  width: 250rpx;
+  height: 250rpx;
+  padding: 5rpx
+
+}
+
+.imginlist{
+  height:250rpx;
+  width:250rpx;
+}
+
+.note{
+  font-size: small;
+  top: 85%;
+  position: fixed
+}

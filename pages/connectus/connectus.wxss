@@ -1,0 +1,49 @@
+/**index.wxss**/
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center
+}
+
+.inbox{
+  top: 40%;
+  left: 70rpx;
+  position: fixed;
+  border: 2rpx solid steelblue;
+  border-radius: 20rpx;
+  width:80%;
+  height: 23%;
+}
+
+
+.load_button {
+  top: 65%;
+  left: 255rpx;
+  width: 260rpx; 
+  /* height: 7%; */
+  border-radius: 20rpx;
+  position: fixed;
+}
+
+.info{
+  top: 0rpx;
+  width: 100%;
+  height: 300rpx;
+  position: fixed;
+  align-content: center;
+  text-align: center;
+  background-color: gainsboro
+}
+
+.note{
+  font-size: 24rpx;
+}
+
+.notice{
+  font-size: 26rpx;
+  position: fixed;
+  left: 0rpx;
+  top:80%;
+}
