@@ -7,8 +7,7 @@ App({
     setfind:true,
     setstyle:true,
     setadd:true,
-    Server_url:'https://2333.mynatapp.cc',
-    // Server_url: 'http://127.0.0.1:8080'
+    Server_url: 'http://127.0.0.1:8080'
   },
   onLaunch: function () {
     // 展示本地存储能力
