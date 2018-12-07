@@ -6,7 +6,7 @@
 
 ![可爱贴纸界面](https://github.com/YangRui2015/Image/blob/master/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-11-27%2013.23.46.png)
 
-![图片搜索界面](Ihttps://github.com/YangRui2015/Image/blob/master/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-11-27%2013.23.57.png)
+![图片搜索界面](https://github.com/YangRui2015/Image/blob/master/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-11-27%2013.23.57.png)
 
 ![风格迁移界面](https://github.com/YangRui2015/Image/blob/master/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-11-27%2013.24.09.png)
 
