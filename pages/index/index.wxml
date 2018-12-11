@@ -2,7 +2,7 @@
 <view class="container">
  
 
-<image class="show_image" src="{{show_image}}" mode="aspectFit"         bindtouchstart='timestart' bindtouchend='timeend' bindtap='saveImg'></image>
+<image class="show_image" src="{{real_show}}" mode="aspectFit"         bindtouchstart='timestart' bindtouchend='timeend' bindtap='saveImg'></image>
 
 <button class="load_button" type="primary" bindtap="upload"> 上传图片 </button>
 

@@ -7,6 +7,7 @@ Page({
    */
   data: {
     show_image: '../image/0.jpg',
+    real_show: '../image/0.jpg',
     timestart:0,
     timeend:0,
     Server_url:app.globalData.Server_url
@@ -71,9 +72,11 @@ Page({
               })
               // console.log(res.data)
               let FilePath = res.data;  // 更新图片
+              let SmallPath = res.data.replace("_f.jpg","_s.jpg");
               if (FilePath.endsWith(".jpg")){
                 that.setData({  //上传成功修改显示图片
                   show_image: that.data.Server_url + '/static/addear/' + FilePath,
+                  real_show: that.data.Server_url + '/static/addear/' + SmallPath
                 })
               }
               else{   // 没检测到人脸
