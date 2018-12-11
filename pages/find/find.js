@@ -9,6 +9,7 @@ Page({
     msg:'点击查询',
     ico:"../image/ico.png",
     // show_image: '../image/1.jpg',
+    thumbnail_list: ['../image/0.jpg', '../image/1.jpg', '../image/0.jpg'],
     img_list: ['../image/0.jpg', '../image/1.jpg' ,'../image/0.jpg'],
     timestart:0,
     timeend:0,
@@ -40,8 +41,9 @@ Page({
         console.log(res);
         if (res.data.endsWith(".JPG") || res.data.endsWith(".jpg") || res.data.endsWith(".png") || res.data.endsWith(".jpeg")) {
                 let FilePath = res.data.split(",");  // 更新图片
+                let SmallPath = res.data.replace(/all/g, "all_thumbnail").split(",");
                 console.log(FilePath.length)
-
+                console.log(SmallPath)
                 if (res.statusCode == 200) {
                   wx.showModal({
                     title: '提示',
@@ -50,6 +52,7 @@ Page({
                   })
                   that.setData({  //上传成功修改图片列表
                     img_list: FilePath,
+                    thumbnail_list:SmallPath
                   })
                 }
               }
@@ -132,8 +135,9 @@ Page({
               if (res.data.endsWith(".JPG") || res.data.endsWith(".jpg") || res.data.endsWith(".png") || res.data.endsWith(".jpeg"))              
               {
                 let FilePath = res.data.split(",");  // 更新图片
+                let SmallPath = res.data.replace(/all/g, "all_thumbnail").split(",");
                 console.log(FilePath.length)
-
+                console.log(SmallPath)
                 if (res.statusCode == 200) {
                   wx.showModal({
                     title: '提示',
@@ -142,6 +146,7 @@ Page({
                   })
                   that.setData({  //上传成功修改图片列表
                     img_list: FilePath,
+                    thumbnail_list: SmallPath
                   })
                 }
               }

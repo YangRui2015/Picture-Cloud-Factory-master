@@ -14,8 +14,8 @@
 <view class="scroll_box">
 
 <scroll-view scroll-x="true" class="ImageList">
-<view class="imglist" wx:for="{{img_list}}" wx:key="index">
-		<image class="imginlist" mode="aspectFit" src="{{img_list[index]}}"  bindtouchstart='timestart' bindtouchend='timeend' bindtap='saveImg'>
+<view class="imglist" wx:for="{{thumbnail_list}}" wx:key="index">
+		<image class="imginlist" mode="aspectFit" src="{{thumbnail_list[index]}}"  bindtouchstart='timestart' bindtouchend='timeend' bindtap='saveImg'>
     </image>
 </view>
 </scroll-view>
