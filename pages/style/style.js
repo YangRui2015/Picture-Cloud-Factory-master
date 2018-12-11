@@ -11,6 +11,7 @@ Page({
     choose: 0,
     local_image:'',
     show_image: '../image/7.jpg',
+    real_show: '../image/7.jpg',
     img_list: ['../image/12.jpg', '../image/9.jpg', '../image/13.jpg', '../image/10.jpg', '../image/11.jpg','../image/7.jpg'],
     ratio:1,
     timestart:0,
@@ -37,6 +38,7 @@ Page({
         let tempFilePaths = res.tempFilePaths;
         that.setData({
           show_image: tempFilePaths[0],
+          real_show: tempFilePaths[0],
           local_image: tempFilePaths[0],
           haveload:true
         })
@@ -81,11 +83,12 @@ Page({
           console.log(res);
           if (res.data.endsWith(".JPG") || res.data.endsWith(".jpg") || res.data.endsWith(".png") || res.data.endsWith(".jpeg")) {
             var FilePath = res.data;  // 更新图片
-
+            let SmallPath = res.data.replace("_t.jpg","_s.jpg")
             if (res.statusCode == 200) {
               console.log(FilePath)
               that.setData({  //上传成功修改图片列表
                 show_image: FilePath,
+                real_show:SmallPath
               })
               console.log(that.data.show_image)
             }

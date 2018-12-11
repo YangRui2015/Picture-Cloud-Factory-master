@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
 
-<image class="show_image" src="{{show_image}}" mode="aspectFit" 
+<image class="show_image" src="{{real_show}}" mode="aspectFit" 
 bindtouchstart='timestart' bindtouchend='timeend' bindtap='saveImg'>
 </image>
 
